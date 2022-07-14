@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <Script src ="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></Script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+            <div class="mt-5">
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=sparkout&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+            </div>
+        </div>
+        <div class="col-7">
+            <div class="mt-5">
+        <div class="card">
+            <div class="card-header">REGISTRATION
+                <div class="card-body">
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full name<span class="text-danger">*</span></label>
+                       <input type="text" class="form-control" id="name" placeholder="enter your name" name="name"> 
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check form-check-inine">
+                                <label for="Gender"> Gender </label>
+                                <input type="radio" name="Gender" class="form-check-input" value="male" id="gender_male"/> 
+                                <label for="gender_male" class="m2-4 form-check-label">Male</label>
+                                <input type="radio" name="Gender" class="form-check-input" value="female" id="gender_female"/> 
+                                <label for="gender_female" class="m2-4 form-check-label">feMale</label>
+                                <input type="radio" name="Gender" class="form-check-input" value="other" id="gender_other"/> 
+                                <label for="gender_other" class="m2-4 form-check-label">other</label>
+                            </div>
+                        <div class="form-group">
+                            <label for="phone">Mobile number <span class="text-muted">(optional)</span></label>
+                       <input type="number" class="form-control" id="phone" placeholder="+91 9876543210">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email ID</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="abc@gmai.com">
+                            <small id="emailvalid">Enter your valid email Id</small>
+                        </div>  
+                        <div class="form-group">
+                            <label for="soure">Came from</label>
+                            <select name="source" id="source" class="form-control">
+                                <option value="">--Select source--</option>
+                                <option value="Google"> Google</option>
+                                <option value="skype">Skype</option>
+                            </select>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                    </form>    
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</body>
+</html>
